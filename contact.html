@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Coffee House</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">Coffee House.</div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre nós</a>
+            <a href="menu.html">Cardápio</a>
+            <a href="contact.html" class="ativo">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- BANNER -->
+
+    <section class="contato-banner">
+
+        <span>Estamos aqui para você</span>
+
+        <h1>Vamos conversar?</h1>
+
+        <p>
+            Dúvidas, sugestões ou apenas vontade de falar sobre café?
+            Será um prazer receber sua mensagem.
+        </p>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section class="contato-container">
+
+        <div class="contato-informacoes">
+
+            <span class="etiqueta">Entre em contato</span>
+
+            <h2>Adoraríamos ouvir você.</h2>
+
+            <p>
+                Nosso objetivo é proporcionar experiências especiais.
+                Entre em contato e fale com nossa equipe.
+            </p>
+
+            <div class="informacao">
+
+                <h3>📍 Endereço</h3>
+                <p>Rua das Flores, 123 - Centro</p>
+
+            </div>
+
+            <div class="informacao">
+
+                <h3>✉️ E-mail</h3>
+                <p>contato@coffeehouse.com.br</p>
+
+            </div>
+
+            <div class="informacao">
+
+                <h3>📞 Telefone</h3>
+                <p>(11) 99999-9999</p>
+
+            </div>
+
+            <div class="informacao">
+
+                <h3>🕒 Funcionamento</h3>
+                <p>Segunda a sábado: 08h às 20h</p>
+
+            </div>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+
+        <div class="formulario">
+
+            <h2>Envie sua mensagem</h2>
+
+            <form id="formContato">
+
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Seu e-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" placeholder="Qual o assunto?" required>
+
+                <label for="mensagem">Sua mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="resposta"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE FINAL -->
+
+    <section class="frase-contato">
+
+        <h2>
+            "Um bom café aproxima pessoas.
+            Uma boa conversa cria momentos."
+        </h2>
+
+        <span>Coffee House.</span>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <strong>Coffee House.</strong>
+
+        <p>Café, qualidade e bons momentos.</p>
+
+        <p>© 2026 Coffee House. Todos os direitos reservados.</p>
+
+    </footer>
+
+  <style>
+
+/* PÁGINA DE CONTATO */
+
+.contato-banner {
+    background: linear-gradient(rgba(33, 23, 17, 0.7), rgba(33, 23, 17, 0.7)),
+    url('https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=1600&q=85') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.contato-banner span {
+    color: #e1b98e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contato-banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.contato-banner p {
+    line-height: 1.8;
+}
+
+.contato-container {
+    padding: 100px 10%;
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.contato-informacoes,
+.formulario {
+    flex: 1;
+}
+
+.contato-informacoes h2,
+.formulario h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.contato-informacoes > p {
+    color: #756b63;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.informacao {
+    margin: 25px 0;
+}
+
+.informacao h3 {
+    margin-bottom: 8px;
+}
+
+.informacao p {
+    color: #756b63;
+}
+
+.formulario {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin: 15px 0 8px;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 14px;
+    border: 1px solid #ddd2c5;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #a4774f;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    margin-top: 20px;
+    padding: 15px;
+    background: #211711;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: #a4774f;
+}
+
+.frase-contato {
+    background: #eee3d5;
+    text-align: center;
+    padding: 80px 15%;
+}
+
+.frase-contato h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.frase-contato span {
+    display: block;
+    margin-top: 20px;
+    color: #a4774f;
+}
+
+/* RESPONSIVIDADE DO CONTATO */
+
+@media (max-width: 768px) {
+
+    .contato-container {
+        flex-direction: column;
+        padding: 60px 7%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .contato-banner h1 {
+        font-size: 35px;
+    }
+
+    .frase-contato h2 {
+        font-size: 24px;
+    }
+}
+
+  </style>
+
+
+</body>
+</html>
