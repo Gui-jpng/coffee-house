@@ -40,3 +40,41 @@ if (formulario) {
     });
 
 }
+
+
+// MODO ESCURO
+
+const botaoTema = document.getElementById("themeToggle");
+console.log(botaoTema);
+const temaSalvo = localStorage.getItem("tema");
+
+// Verifica se o usuário já escolheu o modo escuro
+if (temaSalvo === "escuro") {
+    document.body.classList.add("dark-mode");
+}
+
+// Verifica se o botão existe na página
+if (botaoTema) {
+
+    // Define o texto inicial do botão
+    botaoTema.textContent = document.body.classList.contains("dark-mode")
+        ? "☀️ Modo claro"
+        : "🌙 Modo escuro";
+
+    // Detecta quando o usuário clica no botão
+    botaoTema.addEventListener("click", function () {
+        
+
+        document.body.classList.toggle("dark-mode");
+
+        const modoEscuroAtivo = document.body.classList.contains("dark-mode");
+
+        // Atualiza o texto do botão
+        botaoTema.textContent = modoEscuroAtivo
+            ? "☀️ Modo claro"
+            : "🌙 Modo escuro";
+
+        // Salva a preferência do usuário
+        localStorage.setItem("tema", modoEscuroAtivo ? "escuro" : "claro");
+    });
+}

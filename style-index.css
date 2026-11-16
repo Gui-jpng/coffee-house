@@ -336,3 +336,52 @@
                 font-size: 31px;
             }
         }
+
+        /* =================================
+   MODO ESCURO
+================================= */
+
+body.dark-mode {
+    background-color: #1a1410;
+    color: #f7f1e8;
+}
+
+/* Cartões */
+body.dark-mode .diferencial,
+body.dark-mode .produto {
+    background-color: #302219;
+    color: #f7f1e8;
+}
+
+/* Seção sobre */
+body.dark-mode .sobre {
+    background-color: #241a14;
+}
+
+/* Textos */
+body.dark-mode .subtitulo,
+body.dark-mode .diferencial p,
+body.dark-mode .produto p,
+body.dark-mode .sobre-conteudo p {
+    color: #cbb9a7;
+}
+
+/* Botão de tema */
+#themeToggle {
+    background-color: #c69b6d;
+    color: #211711;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    background-color: #e0bd94;
+}
+
+       
+
+
